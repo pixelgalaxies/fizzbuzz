@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body, html {
+	height: 100%;
+	font-family: 'Nunito', serif;
+	background-color: #dddddd;
+}
+
+.container, .overlay {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	margin: 10px 0;
+	font-size: 60px;
+}
+
+.inputNum {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.goButton {
+	font-size: 24px;
+	padding: 10px 20px;
+	background-color: #099000;
+	border-radius: 10px;
+}
+
+.overlay {
+	min-height: 100%;
+	background-color: rgba(0,0,0,0.95);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: none;
+	overflow: auto;
+}
+
+.closeIcon {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.overlay p {
+	font-size: 24px;
+	color: #fafafa;
+}

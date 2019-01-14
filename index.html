@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- This is the index for Visual Fizzbuzz-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
+	<link rel="stylesheet" href="fizzbuzzstyles.css">
+	
+	<title>Visual Fizzbuzz</title>
+</head>
+<body>
+	<div class="container">
+		<h1>The Visual Fizzbuzz</h1>
+		<p>Enter a number below and watch the fizzbuzz script execute.</p>
+		<p>(Please keep it under 500. Please no negative integers or decimals.)</p>
+		<input type="number" max="500" class="inputNum" name="inputNum" autofocus>
+		<button class="goButton" onclick="run()">GO!</button>
+	</div>
+	
+	<div class="overlay">
+		<img class="closeIcon" onclick="closeDiv()" src="x.svg" alt="">
+		<p class="numbers"></p>
+	</div>
+	
+	<script src="fizzbuzz.js"></script>
+</body>
+</html>
